@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EZ Guitar</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Entrez votre nom</string>
+    <string name="surname">Entrez votre prénom</string>
+    <string name="age">Entrez votre age</string>
+    <string name="button_send">Envoyer!</string>
+    <string name="title_activity_display_message">My Message</string>
+
+</resources>
