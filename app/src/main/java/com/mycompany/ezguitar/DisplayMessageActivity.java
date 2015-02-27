@@ -1,17 +1,14 @@
 package com.mycompany.ezguitar;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.mycompany.ezguitar.MainActivity;
-import com.mycompany.ezguitar.R;
 
-
-public class DisplayMessageActivity extends ActionBarActivity {
+public class DisplayMessageActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +25,9 @@ public class DisplayMessageActivity extends ActionBarActivity {
 
         // Set the text view as the activity layout
         setContentView(textView);
+
+        //Afficher du menu "Up"
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 

@@ -1,7 +1,7 @@
 package com.mycompany.ezguitar;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,8 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 
+import static com.mycompany.ezguitar.R.menu.menu_main;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity extends Activity {
 
     public final static String EXTRA_MESSAGE = "com.mycompany.ezguitar.MESSAGE"; //pour passer des
     //intent avec des extras
@@ -30,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(menu_main, menu);
         return true;
     }
 
